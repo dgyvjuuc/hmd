@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s ease;
+}
+:root{
+    --green:#3A9943;
+}
+*::selection{
+    background: var(--green);
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.header-1,
+.header-2,
+.header-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3A9943;
+    padding: 2rem 9%;
+}
+.header-1{
+    border-bottom: .1rem solid rgba(255,255,255,.2);
+}
+.header-3{
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    z-index: 10000;
+}
+.header-1 span{
+    font-size: lighter;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.header-1 a,
+.header-1 i{
+   padding: 0 .7rem;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header-1 i:hover{
+    color: yellow;
+}
+.header-2 .logo{
+    font-size:3rem ;
+    color: #fff;
+    font-weight: bolder;
+
+}
+.header-2 .logo i{
+    color: yellow;
+}
+.header-2 .search-bar-container{
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    padding: 1.5rem;
+    background: rgba(255,255,255,.2);
+    border-radius: .5rem;
+}
+.header-2 .search-bar-container #search-bar{
+    width: 100%;
+    background: none;
+    height: 100%;
+    text-transform: none;
+    color: #fff;
+    font-size: 1.7rem;
+}
+input::placeholder{
+    color: #ddd;
+}
+.header-2 .search-bar-container .bx-search{
+    color: #fff;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 .5rem;
+}
+.header-2 .search-bar-container .bx-search:hover{
+    color: yellow;
+}
+.header-3 .navBar a{
+    color: #333;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.header-3 .icons a{
+    color: #333;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header-3{
+    box-shadow: 0px 2px 10px rgba(0,0,0,.3);
+    border-bottom: .1rem solid #eee;
+}
+.header-3 .navBar a:hover,
+.header-3 .icons a:hover{
+    color: var(--green);
+}
+.header-3 #menubtn{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    padding: .5rem 1.3rem;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header-1,
+    .header-2,
+    .header-3{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+   .header-3 #menubtn{
+    display: block;
+   }
+   .header-3 .navBar{
+    position: absolute;
+    top: 55%;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0,100% 0, 100% 0, 0 0 );
+   }
+   .header-3 .navBar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+   .header-3 .navBar a{
+    margin: 1.5rem 0;
+    padding:1.5rem;
+    text-align: center;
+    display: block;
+    background: #fff;
+    border: .1rem solid #eee;
+    border-radius: .5rem;
+   }
+   .header-2 {
+    flex-flow: column;
+   }
+   .header-2 .search-bar-container{
+    width: 100%;
+    margin-top: 2rem;
+   }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .header-1{
+        display: none;
+    }
+    .header-3 .navBar{
+        top: 39%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:992px){
+    .container{
+        padding: 0 2em;
+    }
+}
